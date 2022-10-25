@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    max-height: calc(100vh)-100px;
+    /* padding: 7% 0%; */
+    align-items: center;
+}
+
+.calc-container{
+    width: 400px;
+    height: 500px;
+    background: blue;
+    /* align-items: center; */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.seven-nums{
+    display: flex;
+}
+.four-nums{
+    display: flex;
+}
+.one-nums{
+    display: flex;
+}
+.zero-nums{
+    display: flex;
+}
