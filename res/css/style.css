@@ -45,8 +45,11 @@
     grid-gap: 20px;
     justify-items: center;
 }
+.equal{
+    background: #c71585 !important;
+}
 
-.seven-nums p{
+.seven-nums button{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -56,5 +59,8 @@
     border-radius: 100%;
     width: 50px;
     height: 50px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
     background: rgba(82, 81, 81, 0.322);
 }
