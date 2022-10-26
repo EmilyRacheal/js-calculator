@@ -1,16 +1,45 @@
-const one = document.getElementById("one").value;
-const two = document.getElementById("two").value;
-const three = document.getElementById("three").value;
-const four = document.getElementById("four").value;
-const five = document.getElementById("five").value;
-const six = document.getElementById("six").value;
-const seven = document.getElementById("seven").value;
-const eight = document.getElementById("eight").value;
-const nine = document.getElementById("nine").value;
+// const one = document.getElementById("one").value;
+// const two = document.getElementById("two").value;
+// const three = document.getElementById("three").value;
+// const four = document.getElementById("four").value;
+// const five = document.getElementById("five").value;
+// const six = document.getElementById("six").value;
+// const seven = document.getElementById("seven").value;
+// const eight = document.getElementById("eight").value;
+// const nine = document.getElementById("nine").value;
 
+const nunberArray = [];
+// const addArray
 
 const handleDigitsValue = (btn) =>{
-  document.getElementById("zero").innerHTML = btn;
+  nunberArray.push(btn)
+  let str = nunberArray.join()
+  let removeComma = str.replaceAll(',', '')
+  document.getElementById("zero").innerHTML = removeComma;
+  console.log(+removeComma)
+
+// const totalArray = nunberArray.values();
+
+// for(let elems of totalArray){
+//   document.getElementById("zero").innerHTML = btn;   
+//   console.log(elems)
+// }
+
+  
+  // for (let i = 0; i < nunberArray.length; i++) {
+  //   if (btn >= nunberArray ) {
+  //       // document.getElementById("zero").innerHTML = btn;   
+  //     }
+  //     else{
+  //       alert("click a number")
+  //     }
+  //     // console.log(nunberArray)
+      
+  //   }
+
+  // if (btn ) {
+    
+  // }
 
 }
 
