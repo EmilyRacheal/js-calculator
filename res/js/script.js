@@ -9,11 +9,19 @@ const eight = document.getElementById("eight").value;
 const nine = document.getElementById("nine").value;
 
 
-const handleDigitsValue = () =>{
-  document.getElementById("zero").innerHTML = one;
+const handleDigitsValue = (btn) =>{
+  document.getElementById("zero").innerHTML = btn;
+
 }
 
-
+// document.querySelectorAll('button').forEach(button => {
+//   button.addEventListener('click', () => {
+//     const zero = document.getElementById("zero").innerHTML = button;
+//       const fired_button = button.value;
+//       alert(fired_button);
+      
+//   });
+// });
 
 
 
