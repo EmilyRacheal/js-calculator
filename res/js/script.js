@@ -1,47 +1,55 @@
-// const one = document.getElementById("one").value;
-// const two = document.getElementById("two").value;
-// const three = document.getElementById("three").value;
-// const four = document.getElementById("four").value;
-// const five = document.getElementById("five").value;
-// const six = document.getElementById("six").value;
-// const seven = document.getElementById("seven").value;
-// const eight = document.getElementById("eight").value;
-// const nine = document.getElementById("nine").value;
+let nunberArray = [];
+// const addArray = [];
+let removeComma = 0
+let totalValue = 0
 
-const nunberArray = [];
-// const addArray
+let valueOne = 0;
+let valueTwo = 0
+let operator = null
+
+
+const setOperator = (operator) =>{
+  operator = operator
+  nunberArray = []
+  if (valueOne == 0) {
+    valueOne = removeComma
+    document.getElementById("zero").innerHTML=0
+  }else if(valueTwo == removeComma){
+    
+    document.getElementById("zero").innerHTML=0
+  }
+  if (operator == "add") {
+    totalValue = parseInt(valueOne + valueTwo) 
+    valueOne = removeComma
+    valueTwo = 0
+ 
+    document.getElementById("zero").innerHTML=0
+  } 
+}
+
+const getTotal = () =>{
+  document.getElementById("zero").innerHTML=removeComma
+  alert(valueTwo)
+}
+ 
 
 const handleDigitsValue = (btn) =>{
   nunberArray.push(btn)
   let str = nunberArray.join()
-  let removeComma = str.replaceAll(',', '')
+  removeComma = parseInt(str.replaceAll(',', '')) 
   document.getElementById("zero").innerHTML = removeComma;
-  console.log(+removeComma)
-
-// const totalArray = nunberArray.values();
-
-// for(let elems of totalArray){
-//   document.getElementById("zero").innerHTML = btn;   
-//   console.log(elems)
-// }
-
-  
-  // for (let i = 0; i < nunberArray.length; i++) {
-  //   if (btn >= nunberArray ) {
-  //       // document.getElementById("zero").innerHTML = btn;   
-  //     }
-  //     else{
-  //       alert("click a number")
-  //     }
-  //     // console.log(nunberArray)
-      
-  //   }
-
-  // if (btn ) {
-    
-  // }
 
 }
+
+// const handleAddDigits = () =>{
+//   let plus = 0
+//   document.getElementById("zero").innerHTML = plus;
+
+//   console.log(plus);
+
+// }
+
+
 
 // document.querySelectorAll('button').forEach(button => {
 //   button.addEventListener('click', () => {

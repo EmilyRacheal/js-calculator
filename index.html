@@ -18,7 +18,7 @@
                     <button value="7" id="seven" onclick="handleDigitsValue(this.value)">7</button>
                     <button value="8" id="eight" onclick="handleDigitsValue(this.value)">8</button>
                     <button value="9" id="nine" onclick="handleDigitsValue(this.value)">9</button>
-                    <button>+</button>
+                    <button onclick="setOperator('add')">+</button>
                     <button value="4" id="four" onclick="handleDigitsValue(this.value)">4</button>
                     <button value="5" id="five" onclick="handleDigitsValue(this.value)">5</button>
                     <button value="6" id="six" onclick="handleDigitsValue(this.value)">6</button>
@@ -30,7 +30,7 @@
                     <button class="" id="zero">0</button>
                     <button>.</button>
                     <button>/</button>
-                    <button class="equal">=</button>
+                    <button class="equal" onclick="getTotal()">=</button>
                 </div>
             </div>
         </div>
